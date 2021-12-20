@@ -13,7 +13,7 @@ import { AuthService } from './auth.service';
 })
 export class LoginComponent implements OnInit {
   usuario: Usuario;
-  constructor(public authService: AuthService, private router:Router) { 
+  constructor(public authService: AuthService, private router:Router) {
     this.usuario = new Usuario();
   }
 
@@ -25,16 +25,16 @@ export class LoginComponent implements OnInit {
     console.log(response);
     this.authService.guardarUsuario(response.access_token);
     this.authService.guardarToken(response.access_token);
-    this.router.navigate(['/users']);
+    this.router.navigate(['/nuevo']);
     let usuario = this.authService.usuario;
-    
-    swal.fire('Login', `Hola ${usuario.username}, has iniciado sesión con exito!`)
+
+    swal.fire('REGISTRADO', `Hola ${usuario.username}, has iniciado sesión con exito!`)
   },error=>{
       if(error.status == 400){
         swal.fire('Error Login', 'Usuario o clave Incorrecta', 'error');
       }
-  }  
+  }
   );
   }
-  
+
 }

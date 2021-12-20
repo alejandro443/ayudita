@@ -1,0 +1,13 @@
+<div class="conte">
+    <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+
+        <div class="mb-3">
+            <h1 for="exampleInputPassword1" class="form-label">Pedido Oracion</h1>
+            <textarea type="text" class="form-control" id="oracion" name="oracion" [(ngModel)]="oracion" required></textarea>
+
+        </div>
+        <div class="mb-3 form-check">
+        </div>
+        <button class="btn btn-outline-success btn-block" [disabled]="!f.valid">Registrar</button>
+    </form>
+</div>

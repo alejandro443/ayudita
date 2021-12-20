@@ -11,6 +11,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { TokenInterceptor } from './users/interceptors/token.interceptor';
 import { AuthInterceptor } from './users/interceptors/auth.interceptor';
 import { ListarComponent } from './persona/listar/listar.component';
+import { AppRoutingModuleModule } from './app-routing-module.module';
 const routes: Routes=[
   {path: '', component: PageLoginComponent},
   {path: '**', redirectTo:''}
@@ -22,7 +23,7 @@ const routes: Routes=[
     ListarComponent,
   ],
   imports: [
-    BrowserModule, CoreModule,AppRoutingModule,HttpClientModule, FormsModule, ReactiveFormsModule 
+    BrowserModule, CoreModule,AppRoutingModule,HttpClientModule, FormsModule, ReactiveFormsModule, AppRoutingModuleModule 
   ],
   providers: [
   /*{provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi:true},

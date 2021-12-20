@@ -1,4 +1,4 @@
-<table class="table">
+  <!--  <table class="table">
   <thead>
       <tr>
           <th scope="col">Id</th>
@@ -10,17 +10,19 @@
       </tr>
   </thead>
   <tbody>
-      <tr *ngFor="let persona of personas">
+      <tr *ngFor="let persona of persona">
 
           <td>{{persona.ID}}</td>
           <td>{{persona.nombre}}</td>
-         <!--   <td>{{persona.ID}}</td>
+        <td>{{persona.ID}}</td>
                 <td>{{persona.nombre}}$</td>
                  Required meta tags  <td><button class="btn btn-outline-primary" routerLink="/detalle/{{producto.id}}"><i class="fas fa-eye"></i>Detalle</button></td>
         <td><button cla     ss="btn btn-outline-warning" routerLink="/editar/{{producto.id}}"><i class="fas fa-edit"></i>Editar</button></td>
-        <td><button class="btn btn-outline-danger" (click)="borrar(producto.id)"><i class="far fa-trash-alt"></i>Eliminar</button></td>-->
+        <td><button class="btn btn-outline-danger" (click)="borrar(producto.id)"><i class="far fa-trash-alt"></i>Eliminar</button></td>
 
       </tr>
 
   </tbody>
 </table>
+-->
+{{personas | json}}

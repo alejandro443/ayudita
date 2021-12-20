@@ -10,9 +10,9 @@ export class MenuService{
         {title: "Usuarios", url:'/users', icono:"fas fa-users"},
         {title: "Ventas", url:'/dashboard', icono:"fas fa-baby-carriage"},
         {title: "Reportes", url:'/dashboard', icono:"fas fa-chart-bar"},
-        {title: "Posts", url:'/posts', icono:"fas fa-file-alt"},
-        {title: "Roles", url:'/roles', icono:"fas fa-file-alt"},
-        {title: "persona", url:'/listar',icono:"fas fa-file-alt"}
+        {title: "Registar", url:'/registrar', icono:"fas fa-file-alt"},
+        {title: "Pedido de Oracion", url:'/pedido', icono:"fas fa-bible"},
+        {title: "persona", url:'/nuevo',icono:"fas fa-file-alt"}
     ];
 
     getListMenu():IMenu[]{

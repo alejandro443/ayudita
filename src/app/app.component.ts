@@ -8,16 +8,16 @@ import swal from 'sweetalert2';
   selector: 'adra-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-  
+
 })
 export class AppComponent {
   title = 'adra-app-model';
   status: boolean = false;
   expanded = true;
   user:any;
-  text:string="dreyna";
+  text:string="Alejandro";
   clickEvent(){
-      this.status = !this.status;       
+      this.status = !this.status;
   }
   constructor(public authService: AuthService, private router:Router){
 
